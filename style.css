@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(220, 220, 112);
+    color: black;
+}
+
+/*Main Container*/
+.container{
+    width:765px;
+    margin: 18px auto;
+    border: 1px solid rgb(184, 184, 133) ;
+    padding: 8px;
+}
+ 
+/*Header*/
+.header{
+    height: 170px;
+    background-color: rgb(154, 235, 87);
+    border: 1px solid #9db52a;
+    position: relative;
+}
+.header-text{
+    position: absolute; /*Position is used for postion 
+    of this text like, top theke 40px sore jabe and right e 125px sorbe */
+    top: 40px;
+    right: 125px;
+}
+.header-text h1{
+    font-size: 35px;
+  /* font weight means text thickness*/
+    margin-bottom: 6px;/* h1 text er niche 6px margin*/
+}
+.header-text p{
+    font-size: 16px;
+}
+
+/*Navigation*/
+.navbar{
+    margin-top: 5px;
+    border: 1px solid #c8c2a8;
+    background-color: #f2eed9;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    height: 45px;
+    
+}
+.navbar li{
+    flex: 1;/*ব্রাউজারের স্ক্রিন অনুযায়ী নিজেকে বড় করে পুরো খালি অংশটুকু একা জুড়েই ভরাট করে ফেলে।*/
+}
+.navbar a{
+    display: flex; /*text er positon thik korte kaje lage*/
+    height: 45px;
+    align-items: center;/*space from top*/
+    justify-content: center;/*space from side*/
+    color: darkgreen;
+    font-size: 13px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #d9df6b;
+}
+
+/*Main Content*/
+.content{
+    display: flex;
+    gap: 24px;
+    padding: 14px 8px 25px;
+}
+
+/*Left Column*/
+.left-column{
+    width: 180px;
+    flex-shrink: 0;/*fit into given space*/
+}
+.sidebar-section-Menu h1{
+    font-size: 19px;
+    background: rgb(166, 216, 90);
+    padding: 9px 8px;
+    margin-bottom: 10px;
+    border: 1px solid #9db52a;
+}
+.side-menu{
+    list-style: none;
+    margin-bottom: 25px;
+    padding: 0 8px;
+}
+.side-menu li{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.side-menu a{
+    text-decoration: underline;
+    color: darkgreen;
+}
+.side-menu a:hover{
+    background-color: whitesmoke;
+}
+
+/*Block*/
+.sidebar-section-block h1{
+    margin-bottom: 10px;
+    padding: 9px 9px;
+    background-color:rgb(166, 216, 90) ;
+    font-size: 19px;
+    border: 1px solid #9db52a;
+}
+.sidebar-section-block p{
+    line-height: 1.7;
+    margin-bottom: 12px;
+    padding: 0 8px;
+    font-size: 13px;
+}
+
+/*Middle Column*/
+.middle-column{
+    flex: 1;
+    min-width: 0;
+}
+.gallery{
+    padding-right: 4px;
+    margin-bottom: 10px;
+}
+.gallery h1,
+.service-box h1{
+    font-size: 21px;
+    
+    margin-bottom: 10px ;
+}
+.gallery p{
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/*Services*/
+.services{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/*Subscription & Other Services*/
+.service-box{
+    flex: 1;
+    padding-right: 15px;
+}
+.service-box + .service-box{
+    border-left: 1px solid #d5d0b4;
+    padding-left: 18px;
+}
+.service-box p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/*Button*/
+.service-box button{
+    background-color: rgb(166, 216, 90);
+    padding: 9px 13px;
+    border: 1px solid #9db52a;
+    font-size: 15x;
+    font-weight: bold;
+    cursor: pointer;
+}
+.service-box button:hover{
+    background-color: #b3cf27;
+}
+.footer{
+    display: flex;
+    height: 45px;
+    background-color: rgb(166, 216, 90);
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border: 1px solid #9db52a;
+    font-size: 13px;
+}
